@@ -10,6 +10,7 @@
       "module": "commonjs",
       "jsx": "react",
       "moduleResolution": "node",
-      "sourceMap": true
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true
     }
   }
