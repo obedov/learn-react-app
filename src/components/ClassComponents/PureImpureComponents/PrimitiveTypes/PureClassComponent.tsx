@@ -1,23 +1,21 @@
 import * as React from 'react';
 import { PureComponent } from 'react';
+import { Primitives } from './TestPrimitiveClassComponentsApp';
 
-interface PureClassComponentProps {
-    string?: string;
-    number?: number;
-    boolean?: boolean;
-}
+type PureClassComponentProps = Primitives;
 
 export class PureClassComponent extends PureComponent<PureClassComponentProps> {
     private renderCount = 0;
 
-    render() {
+    render(): JSX.Element {
         const {string, number, boolean} = this.props;
+
         console.count('Render PureClassComponent');
         this.renderCount++;
 
         return (
             <div>
-                <h2>PureClassComponent:</h2>
+                <h2>PureClassComponent (Primitive):</h2>
                 <div>string: {string}</div>
                 <div>number: {number}</div>
                 <div>boolean: {String(boolean)}</div>

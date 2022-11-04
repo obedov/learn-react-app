@@ -1,22 +1,20 @@
 import * as React from 'react';
+import { Primitives } from './TestPrimitiveClassComponentsApp';
 
-interface ImpureClassComponentProps {
-    string?: string;
-    number?: number;
-    boolean?: boolean;
-}
+type ImpureClassComponentProps = Primitives;
 
 export class ImpureClassComponent extends React.Component<ImpureClassComponentProps> {
     private renderCount = 0;
 
-    render() {
+    render(): JSX.Element {
         const {string, number, boolean} = this.props;
+
         console.count('Render ImpureClassComponent');
         this.renderCount++;
 
         return (
             <div>
-                <h2>ImpureClassComponent:</h2>
+                <h2>ImpureClassComponent (Primitive):</h2>
                 <div>string: {string}</div>
                 <div>number: {number}</div>
                 <div>boolean: {String(boolean)}</div>

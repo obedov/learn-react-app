@@ -2,13 +2,15 @@ import * as React from 'react';
 import { PureClassComponent } from './PureClassComponent';
 import { ImpureClassComponent } from './ImpureClassComponent';
 
-interface TestClassComponentsAppState {
+export interface Primitives {
     string?: string;
     number?: number;
     boolean?: boolean;
 }
 
-export class TestClassComponentsApp extends React.Component<{}, TestClassComponentsAppState> {
+type TestPrimitiveClassComponentsAppState = Primitives;
+
+export class TestPrimitiveClassComponentsApp extends React.Component<{}, TestPrimitiveClassComponentsAppState> {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,7 +20,7 @@ export class TestClassComponentsApp extends React.Component<{}, TestClassCompone
         };
     }
 
-    componentDidMount() {
+    componentDidMount(): void {
         const string = 'new string';
         const number = 1;
         const boolean = true;
@@ -28,10 +30,11 @@ export class TestClassComponentsApp extends React.Component<{}, TestClassCompone
         setTimeout(() => this.setState({string, number, boolean}), 5000);
     }
 
-    render() {
+    render(): JSX.Element {
         const {string, number, boolean} = this.state;
+
         return (
-            <div className="TestClassComponentsApp">
+            <div className="testPrimitiveClassComponentsApp">
                 <PureClassComponent string={string} number={number} boolean={boolean}/>
                 <ImpureClassComponent string={string} number={number} boolean={boolean}/>
             </div>
