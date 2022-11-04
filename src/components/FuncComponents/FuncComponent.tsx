@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEffect, useLayoutEffect } from 'react';
 
-export function Component4() {
+export function FuncComponent() {
     useEffect(() => console.log('useEffect1'), []);
     useEffect(() => console.log('useEffect2'), []);
 

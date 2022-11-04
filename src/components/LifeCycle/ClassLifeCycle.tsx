@@ -4,7 +4,24 @@ interface State {
     count?: number;
 }
 
-export default class Component3 extends React.Component<{}, State> {
+/*
+*
+* React class lifecycle (initial):
+* 1) constructor
+* 2) getDerivedStateFromProps
+* 3) render
+* 4) componentDidMount
+*
+*
+* React class lifecycle (after button click):
+* 1) getDerivedStateFromProps
+* 2) shouldComponentUpdate
+* 3) render
+* 4) componentDidUpdate
+*
+*/
+
+export class ClassLifeCycle extends React.Component<{}, State> {
     constructor(props) {
         super(props);
         this.state = {
@@ -42,6 +59,7 @@ export default class Component3 extends React.Component<{}, State> {
     render() {
         console.count('render');
         const {count} = this.state;
+
         return (
             <>
                 <button onClick={() => {

@@ -1,14 +1,19 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import Component1 from './Test/Component1';
-import { Component2 } from './Test/Component2';
-import { Component4 } from './Test/Component4';
-import Component3 from './Test/Component3';
+import { ClassComponent } from './components/FuncClassComparison/ClassComponent';
+import { FuncComponent as FuncComponent1 } from './components/FuncClassComparison/FuncComponent';
+import { FuncComponent as FuncComponent2 } from './components/FuncComponents/FuncComponent';
+import { ClassLifeCycle } from './components/LifeCycle/ClassLifeCycle';
+import { TestClassComponentsApp } from './components/ClassComponents/TestClassComponentsApp';
 
 const App: React.FC = () => {
     return (
-        <Component3/>
+        <>
+            <div>
+                <ClassLifeCycle/>
+            </div>
+        </>
     );
 }
 

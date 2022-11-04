@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useEffect, useState, FC } from 'react';
-import { sleep } from './Component1';
+import { sleep } from '../../functions/sleep/sleep';
 
-export const Component2: FC = () => {
+export const FuncComponent: FC = () => {
     const [value, setValue] = useState(' NOT INITIALISED ');
 
     useEffect(() => {
@@ -10,5 +10,5 @@ export const Component2: FC = () => {
         setValue(() => 'INITIALISED')
     }, []);
 
-    return <div>{value}</div>;
+    return <div><b>Func component:</b> {value}</div>;
 }
