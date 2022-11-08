@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useEffect, useLayoutEffect, useContext, useReducer, useRef } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 
 export function FuncLifeCycle() {
 	useEffect(() => console.count('useEffect'), []);

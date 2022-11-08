@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.ts",
-    "prettier": "prettier \"src/**/*.{js,jsx,ts,tsx}\" --write"
+    "prettier": "prettier \"src/**/*.{js,jsx,ts,tsx}\" --write",
+    "test": "jest"
   },
   "dependencies": {
     "lodash": "4.17.21",
@@ -13,15 +14,25 @@
     "ts-loader": "9.2.6"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.4",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "26.0.9",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.3",
     "html-webpack-plugin": "5.5.0",
+    "jest": "26.4.0",
+    "jest-environment-enzyme": "7.0.2",
+    "jest-enzyme": "7.0.2",
+    "prettier": "2.7.1",
+    "ts-jest": "26.2.0",
     "ts-node": "10.4.0",
     "typescript": "3.8.3",
     "webpack": "5.69.0",
     "webpack-cli": "4.9.2",
-    "webpack-dev-server": "4.7.4",
-    "prettier": "2.7.1"
+    "webpack-dev-server": "4.7.4"
   },
   "keywords": [],
   "author": "Nikita Obedkov",
