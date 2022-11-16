@@ -1,13 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { Example } from './components/FuncComponents/ReactHooks/useState/Example';
+import { TestContextApp } from './components/FuncComponents/ReactHooks/useContext/TestContextApp';
 
 const App: React.FC = () => {
 	return (
 		<>
 			<div>
-				<Example />
+				<TestContextApp />
 			</div>
 		</>
 	);
