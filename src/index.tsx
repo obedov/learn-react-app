@@ -1,13 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { ClassLifeCycle } from './components/LifeCycle/ClassLifeCycle/ClassLifeCycle';
+import { FuncLifeCycle } from './components/LifeCycle/FuncLifeCycle/FuncLifeCycle';
 
 const App: React.FC = () => {
 	return (
 		<>
 			<div>
-				<ClassLifeCycle />
+				<FuncLifeCycle />
 			</div>
 		</>
 	);

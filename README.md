@@ -14,5 +14,5 @@ It consists of examples of:
 
 ## Scripts (package.json)
 1) start - run application;
-2) prettier - prettify all components in src (js,jsx,ts,tsx extensions);
+2) prettier - prettify all components in src (js, jsx, ts, tsx extensions);
 3) test - run all tests for components;

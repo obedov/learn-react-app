@@ -12,9 +12,10 @@ export class ClassComponent extends React.Component {
 	}
 
 	render() {
+		const { value } = this.state;
 		return (
 			<div>
-				<b>Class component:</b> {this.state.value}
+				<b>Class component:</b> {value}
 			</div>
 		);
 	}

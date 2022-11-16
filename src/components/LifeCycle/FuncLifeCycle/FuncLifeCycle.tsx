@@ -1,10 +1,20 @@
 import * as React from 'react';
-import { useEffect, useLayoutEffect } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 
 export function FuncLifeCycle() {
+	const [count, setCount] = useState(0);
+
 	useEffect(() => console.count('useEffect'), []);
 
 	useLayoutEffect(() => console.count('useLayoutEffect'), []);
 
-	return <>{console.count('Rendering JSX')}</>;
+	const onButtonClick = (): void => setCount(prev => prev + 1);
+
+	console.count('rendering JSX');
+
+	return (
+		<>
+			<button onClick={onButtonClick}>button {count}</button>
+		</>
+	);
 }
