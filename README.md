@@ -1,4 +1,4 @@
-# Basic-react-app
+# basic-react-app
 
 ## Description
 
@@ -11,3 +11,8 @@ It consists of examples of:
 4) testing components with Jest and Enzyme;
 5) prettifying components;
 6) and so on (to be continued);
+
+## Scripts (package.json)
+1) start - run application;
+2) prettier - prettify all components in src (js,jsx,ts,tsx extensions);
+3) test - run all tests for components;
