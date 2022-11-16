@@ -1,16 +1,15 @@
 import * as React from 'react';
 import { PureComponent } from 'react';
+
 import { Primitives } from './TestPrimitiveClassComponentsApp';
 
-type PureClassComponentProps = Primitives;
-
-export class PureClassComponent extends PureComponent<PureClassComponentProps> {
+export class PureClassComponent extends PureComponent<Primitives> {
 	private renderCount = 0;
 
 	render(): JSX.Element {
 		const { string, number, boolean } = this.props;
 
-		console.count('Render PureClassComponent');
+		console.count('render PureClassComponent');
 		this.renderCount++;
 
 		return (

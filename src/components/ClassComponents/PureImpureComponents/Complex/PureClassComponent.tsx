@@ -1,20 +1,19 @@
 import * as React from 'react';
-import { ComplexTypes } from './TestComplexClassComponentsApp';
 import { isEqual } from 'lodash';
 
-type PureClassComponentProps = ComplexTypes;
+import { ComplexTypes } from './TestComplexClassComponentsApp';
 
-export class PureClassComponent extends React.Component<PureClassComponentProps> {
+export class PureClassComponent extends React.Component<ComplexTypes> {
 	private renderCount = 0;
 
-	shouldComponentUpdate(nextProps: Readonly<PureClassComponentProps>): boolean {
+	shouldComponentUpdate(nextProps: Readonly<ComplexTypes>): boolean {
 		return !isEqual(nextProps, this.props);
 	}
 
 	render(): JSX.Element {
 		const { object, array, func } = this.props;
 
-		console.count('Render PureClassComponent');
+		console.count('render PureClassComponent');
 		this.renderCount++;
 
 		return (

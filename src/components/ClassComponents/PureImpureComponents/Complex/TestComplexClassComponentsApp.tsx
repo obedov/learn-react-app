@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { PureClassComponent } from './PureClassComponent';
 import { ImpureClassComponent } from './ImpureClassComponent';
 
@@ -8,9 +9,7 @@ export interface ComplexTypes {
 	func?: (text?: string) => void;
 }
 
-type TestComplexClassComponentsAppState = ComplexTypes;
-
-export class TestComplexClassComponentsApp extends React.Component<{}, TestComplexClassComponentsAppState> {
+export class TestComplexClassComponentsApp extends React.Component<{}, ComplexTypes> {
 	constructor(props) {
 		super(props);
 		this.state = {

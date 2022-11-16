@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { PureClassComponent } from './PureClassComponent';
 import { ImpureClassComponent } from './ImpureClassComponent';
 

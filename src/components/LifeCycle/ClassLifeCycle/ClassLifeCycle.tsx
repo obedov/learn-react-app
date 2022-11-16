@@ -36,6 +36,7 @@ export class ClassLifeCycle extends React.Component<{}, State> {
 	}
 
 	componentDidMount() {
+		setTimeout(() => this.setState(prevState => ({ count: prevState.count + 1 })), 3000);
 		console.count('componentDidMount');
 	}
 

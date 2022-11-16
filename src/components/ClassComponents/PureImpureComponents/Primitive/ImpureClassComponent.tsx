@@ -1,15 +1,14 @@
 import * as React from 'react';
+
 import { Primitives } from './TestPrimitiveClassComponentsApp';
 
-type ImpureClassComponentProps = Primitives;
-
-export class ImpureClassComponent extends React.Component<ImpureClassComponentProps> {
+export class ImpureClassComponent extends React.Component<Primitives> {
 	private renderCount = 0;
 
 	render(): JSX.Element {
 		const { string, number, boolean } = this.props;
 
-		console.count('Render ImpureClassComponent');
+		console.count('render ImpureClassComponent');
 		this.renderCount++;
 
 		return (

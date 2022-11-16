@@ -1,15 +1,14 @@
 import * as React from 'react';
+
 import { ComplexTypes } from './TestComplexClassComponentsApp';
 
-type ImpureClassComponentProps = ComplexTypes;
-
-export class ImpureClassComponent extends React.Component<ImpureClassComponentProps> {
+export class ImpureClassComponent extends React.Component<ComplexTypes> {
 	private renderCount = 0;
 
 	render(): JSX.Element {
 		const { object, array, func } = this.props;
 
-		console.count('Render ImpureClassComponent');
+		console.count('render ImpureClassComponent');
 		this.renderCount++;
 
 		return (
