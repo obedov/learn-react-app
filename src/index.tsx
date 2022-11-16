@@ -1,13 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { FuncLifeCycle } from './components/LifeCycle/FuncLifeCycle/FuncLifeCycle';
+import { Example } from './components/FuncComponents/ReactHooks/useState/Example';
 
 const App: React.FC = () => {
 	return (
 		<>
 			<div>
-				<FuncLifeCycle />
+				<Example />
 			</div>
 		</>
 	);
