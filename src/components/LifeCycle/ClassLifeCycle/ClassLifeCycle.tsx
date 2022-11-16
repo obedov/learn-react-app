@@ -56,17 +56,17 @@ export class ClassLifeCycle extends React.Component<{}, State> {
 		console.count('componentDidCatch');
 	}
 
+	private onButtonClick = (): void => {
+		this.setState(prevState => ({ count: prevState.count + 1 }))
+	}
+
 	render() {
 		console.count('render');
 		const { count } = this.state;
 
 		return (
 			<>
-				<button
-					onClick={() => {
-						this.setState(prevState => ({ count: prevState.count + 1 }));
-					}}
-				>
+				<button onClick={this.onButtonClick}>
 					button {count}
 				</button>
 			</>
