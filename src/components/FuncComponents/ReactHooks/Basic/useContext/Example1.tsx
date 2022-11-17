@@ -2,6 +2,12 @@ import * as React from 'react';
 import { useState } from 'react';
 
 /**
+ * https://reactjs.org/docs/hooks-reference.html#usecontext
+ * https://www.w3schools.com/react/react_usecontext.asp
+ */
+
+/**
+ * Example 1:
  * Drilling prop "user" from Component1 to Component5
  */
 

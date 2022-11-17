@@ -1,6 +1,16 @@
 import * as React from 'react';
 import { useState, useContext, createContext } from 'react';
 
+/**
+ * https://reactjs.org/docs/hooks-reference.html#usecontext
+ * https://www.w3schools.com/react/react_usecontext.asp
+ */
+
+/**
+ * Example 2:
+ * Applying useContext to pass prop "user" from Component1 to Component5
+ */
+
 const UserContext = createContext('');
 
 export function Component1() {

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { Example } from './components/FuncComponents/ReactHooks/Basic/useEffect/Example';
+import { Example2 } from './components/FuncComponents/ReactHooks/Additional/useRef/Example2';
 
 const App: React.FC = () => {
 	return (
 		<>
-			<Example />
+			<Example2 />
 		</>
 	);
 };

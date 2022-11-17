@@ -3,7 +3,10 @@ import { useEffect, useState } from 'react';
 
 /**
  * https://reactjs.org/docs/hooks-reference.html#useeffect
- *
+ * https://www.w3schools.com/react/react_useeffect.asp
+ */
+
+/*
  * useEffect input params:
  * effect – Imperative function that can return a cleanup function.
  * deps – If present, effect will only activate if the values in the list change.
