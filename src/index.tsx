@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { TestComplexFuncComponentsApp } from './components/FuncComponents/ReactMemo/Complex/TestComplexFuncComponentsApp';
+import { Example } from './components/FuncComponents/ReactHooks/Basic/useEffect/Example';
 
 const App: React.FC = () => {
 	return (
 		<>
-			<TestComplexFuncComponentsApp />
+			<Example />
 		</>
 	);
 };
