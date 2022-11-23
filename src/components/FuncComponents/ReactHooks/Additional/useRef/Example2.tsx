@@ -11,6 +11,7 @@ import { useRef } from 'react';
  * Use useRef to focus the input.
  */
 
+// A common use case is to access a child imperatively:
 export const Example2 = (): JSX.Element => {
 	const inputElement = useRef(null);
 

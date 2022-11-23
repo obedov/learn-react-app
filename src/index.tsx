@@ -1,12 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
-import { Example2 } from './components/FuncComponents/ReactHooks/Additional/useRef/Example2';
+import { Example1 } from './components/HOCs/Example1';
 
 const App: React.FC = () => {
 	return (
 		<>
-			<Example2 />
+			<Example1 />
 		</>
 	);
 };

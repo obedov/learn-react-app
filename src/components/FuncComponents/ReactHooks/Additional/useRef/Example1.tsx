@@ -6,6 +6,10 @@ import { useState, useRef, useEffect } from 'react';
  * https://www.w3schools.com/react/react_useref.asp
  *
  *
+ * useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue).
+ * The returned object will persist for the full lifetime of the component.
+ *
+ *
  * The useRef Hook allows you to persist values between renders.
  * It can be used to store a mutable value that does not cause re-render when updated.
  * It can be used to access a DOM element directly.
