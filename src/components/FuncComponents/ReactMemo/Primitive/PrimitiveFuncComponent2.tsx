@@ -1,16 +1,17 @@
 import * as React from 'react';
+import { memo } from 'react';
 
 import { Primitives } from './TestPrimitiveFuncComponentsApp';
 
 let count = 0;
 
-export const ImpureFuncComponent: React.FC<Primitives> = ({ string, number, boolean }) => {
+const PrimitiveFuncComponent2: React.FC<Primitives> = ({ string, number, boolean }) => {
 	count++;
-	console.count('render ImpureFuncComponent');
+	console.count('render PrimitiveFuncComponent2');
 
 	return (
 		<div>
-			<h2>ImpureFuncComponent (Primitive):</h2>
+			<h2>MemoizedFuncComponent (Primitive):</h2>
 			<div>string: {string}</div>
 			<div>number: {number}</div>
 			<div>boolean: {String(boolean)}</div>
@@ -21,3 +22,5 @@ export const ImpureFuncComponent: React.FC<Primitives> = ({ string, number, bool
 		</div>
 	);
 };
+
+export default memo(PrimitiveFuncComponent2);

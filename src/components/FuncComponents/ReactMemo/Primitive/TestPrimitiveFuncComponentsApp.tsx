@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, memo } from 'react';
 
-import PureFuncComponent from './PureFuncComponent';
-import { ImpureFuncComponent } from './ImpureFuncComponent';
+import { PrimitiveFuncComponent1 } from './PrimitiveFuncComponent1';
+import PrimitiveFuncComponent2 from './PrimitiveFuncComponent2';
 
 export interface Primitives {
 	string?: string;
@@ -31,8 +31,8 @@ export const TestPrimitiveFuncComponentsApp: React.FC = () => {
 
 	return (
 		<div className='testPrimitiveFuncComponentsApp'>
-			<PureFuncComponent string={string} number={number} boolean={boolean} />
-			<ImpureFuncComponent string={string} number={number} boolean={boolean} />
+			<PrimitiveFuncComponent2 string={string} number={number} boolean={boolean} />
+			<PrimitiveFuncComponent1 string={string} number={number} boolean={boolean} />
 		</div>
 	);
 };

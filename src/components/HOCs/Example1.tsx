@@ -28,11 +28,13 @@ function classWrap(Component) {
 }
 
 // Example of HOC func component that will add 1 to each numeric property passed to the component
-const funcWrap = Component => ({ ...props }) => {
-    const state = { ...props };
-    for (const key in state) state[key] += 1;
-    return <Component {...state} />;
-};
+const funcWrap =
+	Component =>
+	({ ...props }) => {
+		const state = { ...props };
+		for (const key in state) state[key] += 1;
+		return <Component {...state} />;
+	};
 
 const ClassWrappedAdd = classWrap(Add);
 const FuncWrappedAdd = funcWrap(Add);

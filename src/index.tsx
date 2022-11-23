@@ -1,11 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Example1 } from './components/HOCs/Example1';
+
+import { TestPrimitiveFuncComponentsApp } from './components/FuncComponents/ReactMemo/Primitive/TestPrimitiveFuncComponentsApp';
+import { TestComplexFuncComponentsApp } from './components/FuncComponents/ReactMemo/Complex/TestComplexFuncComponentsApp';
 
 const App: React.FC = () => {
 	return (
 		<>
-			<Example1 />
+			<TestComplexFuncComponentsApp />
 		</>
 	);
 };

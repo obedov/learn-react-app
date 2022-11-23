@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 
-import PureFuncComponent from './PureFuncComponent';
-import { ImpureFuncComponent } from './ImpureFuncComponent';
+import PureFuncComponent from './ComplexFuncComponent2';
+import { ComplexFuncComponent1 } from './ComplexFuncComponent1';
 
 export interface ComplexTypes {
 	object?: { string?: string; number?: number; boolean?: boolean };
@@ -48,7 +48,7 @@ export const TestComplexFuncComponentsApp: React.FC = () => {
 	return (
 		<div className='testComplexFuncComponentsApp'>
 			<PureFuncComponent object={object} array={array} func={func} />
-			<ImpureFuncComponent object={object} array={array} func={func} />
+			<ComplexFuncComponent1 object={object} array={array} func={func} />
 		</div>
 	);
 };
