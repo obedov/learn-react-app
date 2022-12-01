@@ -1,13 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { TestPrimitiveFuncComponentsApp } from './components/FuncComponents/ReactMemo/Primitive/TestPrimitiveFuncComponentsApp';
-import { TestComplexFuncComponentsApp } from './components/FuncComponents/ReactMemo/Complex/TestComplexFuncComponentsApp';
+import { AppRedux } from './redux/AppRedux';
 
 const App: React.FC = () => {
 	return (
 		<>
-			<TestComplexFuncComponentsApp />
+			<AppRedux />
 		</>
 	);
 };
