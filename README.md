@@ -1,4 +1,4 @@
-# learn-react-app
+# learn-ui
 
 ## Description
 
