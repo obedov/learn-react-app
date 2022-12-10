@@ -4,7 +4,7 @@ interface State {
 	count?: number;
 }
 
-/*
+/**
  *
  * React class lifecycle (initial):
  * 1) constructor

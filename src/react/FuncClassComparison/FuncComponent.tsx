@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState, FC } from 'react';
 
-import { sleep } from '../../functions/sleep/sleep';
+import { sleep } from '../../utils/functions/sleep/sleep';
 
 export const FuncComponent: FC = () => {
 	const [value, setValue] = useState('NOT INITIALISED');
