@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { AppRedux } from './redux/AppRedux';
+import { Example2 } from './react/FuncComponents/ReactHooks/Additional/useCallback/Example2';
 
 const App: React.FC = () => {
 	return (
 		<>
-			<AppRedux />
+			<Example2 />
 		</>
 	);
 };
